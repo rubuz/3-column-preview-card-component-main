@@ -98,7 +98,6 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   max-width: 800px;
-  background-color: yellow;
   border-radius: 0.5rem;
   overflow: hidden;
 }
@@ -164,4 +163,19 @@ img {
 
 .btn-3 {
   color: var(--clr-primary-800);
+}
+
+/* Mobile layout - media querries */
+
+@media (max-width: 630px) {
+  body {
+    display: block;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    max-width: 375px;
+    margin: 1rem auto;
+  }
 }
